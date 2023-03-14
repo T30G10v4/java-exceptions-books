@@ -53,7 +53,6 @@ public class Main {
 
             }
 
-
             File path = new File("./mio-file.txt");
             Scanner reader = new Scanner(path);
             while(reader.hasNextLine()) {
@@ -61,10 +60,6 @@ public class Main {
                 System.out.println(data);
             }
             reader.close();
-
-
-
-
 
         } catch (NumberFormatException e) {
             System.out.println(e.getMessage());
