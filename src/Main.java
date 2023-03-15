@@ -27,7 +27,7 @@ public class Main {
             for (int i=0;i<numberOfBooks;i++) {
                 System.out.print("Titolo: ");
                 title = scan.nextLine();
-                if(title=="") throw new RuntimeException("title vuoto");
+                if(title.equals("")) throw new RuntimeException("title vuoto");
 
                 System.out.print("Pagine: ");
                 pages = Integer.parseInt(scan.nextLine());
@@ -35,11 +35,11 @@ public class Main {
 
                 System.out.print("Autore: ");
                 author = scan.nextLine();
-                if(author=="") throw new RuntimeException("author vuoto");
+                if(author.equals("")) throw new RuntimeException("author vuoto");
 
                 System.out.print("Editore: ");
                 publisher = scan.nextLine();
-                if(publisher=="") throw new RuntimeException("publisher vuoto");
+                if(publisher.equals("")) throw new RuntimeException("publisher vuoto");
 
                 books[i] = new Book(title, pages, author, publisher);
 
